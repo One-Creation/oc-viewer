@@ -91,6 +91,9 @@ module.exports = function ocViewer(config) {
         iframe = document.createElement('iframe');
         iframe.setAttribute("style","height:100%;width:100%;");
         iframe.setAttribute('src', src);
+        iframe.onload = function() {
+            window.frames[0].postMessage({'authToken': config.authToken}, this.src);
+        }
     }
 
     const setElement = () => {
@@ -101,7 +104,7 @@ module.exports = function ocViewer(config) {
     }
 
     const setSrc = () => {
-        src = `${url}/${config.policyId}/${config.contributionId}/${config.authToken}`;
+        src = `${url}/${config.policyId}/${config.contributionId}`;
     }
 
     const updateConfig = (newConfig) => {
