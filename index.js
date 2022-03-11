@@ -1,3 +1,11 @@
+/**
+ * 
+ * @param {Object} config Mandatory Information
+ * @param {string} config.entryPoint CSS Selector where the iframe will be injected
+ * @param {string} config.authToken Authentication Token required to use OC API
+ * @param {string} config.policyId The ID of the Policy associated with the file
+ * @param {string} config.contribution The ID of the Contribution associated with the file
+ */
 module.exports = function ocViewer(config) {
     let defaultConfig = {
         entryPoint: null,
