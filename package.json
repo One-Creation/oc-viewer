@@ -1,5 +1,5 @@
 {
-  "name": "oc-viewer",
+  "name": "@oc/viewer",
   "version": "1.0.0",
   "description": "One Creation Viewer module",
   "main": "index.js",
