@@ -8,11 +8,13 @@ npm install oc-viewer
 
 ## Usage
 
+```javascript
 const ocViewer = require("oc-viewer");
 
 const viewer = new ocViewer({
-entryPoint: "#oc-viewer",
-contributionId: "your-contribution-id",
-policyId: "your-policy-id",
-authToken: "your-oc-token",
+  entryPoint: "#oc-viewer",
+  contributionId: "your-contribution-id",
+  policyId: "your-policy-id",
+  authToken: "your-oc-token",
 });
+```
