@@ -8,6 +8,10 @@ npm install oc-viewer
 
 ## Usage
 
+```html
+<div id="oc-viewer"></div>
+```
+
 ```javascript
 const ocViewer = require("oc-viewer");
 
